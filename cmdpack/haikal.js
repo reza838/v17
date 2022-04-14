@@ -403,6 +403,7 @@ color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'ar
 //=========================== SWTCH IN COMMAND ======================================\\
 
 switch (command) {
+
 case 'menu':
 reply(`Hai kak ${pushname}, ini base bot whatsapp`)
 break
@@ -465,6 +466,7 @@ if (!e.includes("this.isZero") && !e.includes("jid")) {
 console.log('Error : %s', color(e, 'red'))
 }
 }
+
 }
 
 
