@@ -1,7 +1,7 @@
 
 <p align="center">
 
-- 👼 My name is Haikal
+🗿👋 My name is Haikal HAIKAL ANJG!!!?
 </p>
 
 ------
@@ -12,7 +12,6 @@ Klik Untuk Langsumg Nge Deploy Di Heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Haikalbotz/ikalbase)
 
-## ```SETTING```
 
 - Owner number [Here](https://github.com/Haikalbotz/v7/blob/master/setting.json#L4)
 - Owner name [Here](https://github.com/Haikalbotz/v7/blob/master/setting.json#L13)
