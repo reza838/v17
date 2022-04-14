@@ -33,7 +33,7 @@ console.log(color('│‣ HydraThrow Team'))
 console.log(color('└➤ | ─────────────'))
 console.log(banner)
 haikal.on('qr', () => {
-console.log(color('[','white'), color('!','red'), color(']','white'), color(' Silahkan Scan Kode Qr Nya Kak...!'))
+console.log(color('[','whie'), color('!','red'), color(']','white'), color(' Silahkan Scan Kode Qr Nya Kak...!'))
 })
 fs.existsSync('./sessionWaweb.json') && haikal.loadAuthInfo('./sessionWaweb.json')
 haikal.on('connecting', () => {
