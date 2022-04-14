@@ -167,7 +167,7 @@ fs.unlinkSync(asw)
 
 pporang = 'https://telegra.ph/file/17875e22f33e9ca27d8ed.jpg'
 const ofrply = await getBuffer(pporang)
-const thubb = fs.readFileSync('./image/thumb.jpg')
+const thubb = fs.readFileSync('./cmdpack/image/thumb.jpg')
 const sekarang = new Date().getTime();
 
 
