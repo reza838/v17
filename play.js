@@ -16,7 +16,7 @@ require('./cmdpack/haikal.js')
 nocache('./cmdpack/haikal.js', module => console.log(`${module} telah di update!`))
 const starts = async (haikal = new WAConnection()) => {
 haikal.logger.level = 'warn'
-haikal.version = `${version}`
+haikal.version = [2, 2142, 12]
 haikal.browserDescription = [ 'Ikal', 'Browser', '3.0' ]
 console.log(color('SCRIPT INI 100% AMAN'))
 console.log(color('DALAM PENGAWASAN HAIKAL'))
