@@ -1,0 +1,77 @@
+
+       PANDUAN IKAL BASE ©2022 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+assalamualaikum bwang
+
+Ini Adalah Base Baru,Jadi Kalo Ada Yang Error Maklum Yah 
+Jika Ada Error Bisa Hubungi Saya Melalui Link Whatsapp Di bawah
+
+Di Sini Saya Mau Kasih Arahan, Jika Ingin Nambah Case Dll..
+
+1)• Cara Nambah Case: 
+• Buka Folder Cmd
+• Setelah Itu Buka Folder case
+• lalu Kalian Buka File haikal.js
+• Scrol Ke Bawah, Sampe ada bacaan case
+• Nah di Situ Kalian Bisa add Menu Sesuka Kalian
+
+2)• Cara Ubah Versi Wa web Jika, sudah Waktunya Di Ubah
+• Buka Folder Cmd
+• Setelah Itu Buka Folder Whatsapp
+• Setelah Itu Kalian Buka file versionWaweb.json
+• Nah Kalian Bisa Ubah/Liat Versi nya
+
+Note : Versi Hanya Di Ubah Pada Saat Waweb Versi Terbau Sudah rilis, JANGAN ASAL UBAH!
+
+2)• Cara Ganti Nama Bot Dan Owner
+• Buka Folder Cmd
+• Lalu Buka Folder Setting
+• Nah Kalian Buka File setting.json
+• Nah Di Dalam Situ Udh ada nama namanya, jadi kalian tinggal ganti
+
+3)• Cara Ubah Apikey
+• Buka Folder Cmd
+• Kalian Buka Folder Setting
+• Lalu Kalian Buka File ApikeyNya.json
+• Nah Di Situ Kalian Taro Apiket kalian
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Nah Di Atas Adalah Panduan Untuk Setting²
+Terima Kasih Buat Kalian Yang Udah Pake Script Ini, 
+Note : Dilarang Menjual Script Ini, Karena Script Ini Gratis Untuk Semua Orang
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Contact Developer : https://wa.me/6289609927539 ( Dilarang Spam )
+
+Folow My Sosialmedia :
+ 
+ • Github : https://github.com/Haikalbotz
+ • Youtibe : https://youtube.com/channel/UCYDZpsK1w7hWYInmyZowrUA
+ • Instagram : @haikal_aja
+ • Tiktok : bot
+ 
+#SupportCreatorBotWa
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+[©] Tq To =>
+• Allah swt
+• My Ortu
+• Adwajshing
+• Baileys
+• Whatsapp
+• Kahfz
+• Ridho
+• Dhani
+• Arifirazzaq
+• Mhakbarbar
+• Nurutomo
+• Dan All Creator Bot
+• All Partner
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+       Sekian.
