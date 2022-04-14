@@ -169,7 +169,23 @@ const ofrply = await getBuffer(pporang)
 const thubb = fs.readFileSync('./cmdpack/image/thumb.jpg')
 const sekarang = new Date().getTime();
 
-		
+//----------------- Bagian Button ----------------------\\
+
+const sendButImage = async (from, context, fortext, img, but, mek) => {
+jadinya = await haikal.prepareMessage(from, img, image)
+buttonMessagesI = {
+imageMessage: jadinya.message.imageMessage,
+contentText: context,
+footerText: fortext,
+buttons: but,
+headerType: 4
+}
+haikal.sendMessage(from, buttonMessagesI, buttonsMessage, {
+quoted: mek,
+contexInfo: ikal
+})
+}	
+
 //======================== Bagian Jam ======================
 
 let runtime = function (seconds) {
@@ -390,6 +406,34 @@ switch (command) {
 case 'menu':
 reply(`Hai kak ${pushname}, ini base bot whatsapp`)
 break
+
+
+case 'test':
+case 'tqto':
+fakelink('```⏰ wait some more time. . .```')
+told =  fs.readFileSync('./cmdpack/image/thumb.jpg')
+but = [
+{ buttonId: `#donasi`, buttonText: { displayText: `DONASI` }, type: 1 }, 
+{ buttonId: `#menu`, buttonText: { displayText: `MENU` }, type: 1 }, 
+]
+ sendButImage(from, `
+*•SPECIAL THANKYOU TO•* :
+
+• _MHANKBARBAR_
+• _NURUTOMO_
+• _ARIFIRAZZAQ_
+• _KAHFI_
+• _DHANI_
+• _RIDHO_
+• _NAYLA_
+• _FEBRI EJA_
+• _ZER YT7_
+• _HAIKAL_
+• _ALL CREATOR BOT_
+`, faketeks, told, but) 
+break
+
+
 
 
 //-=================== AKHIR IN ALL FITUR ====================================\\
