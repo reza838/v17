@@ -29,7 +29,7 @@ pkg install libwebp
 pkg install imagemagick
 pkg install bash
 git clone https://github.com/Haikalbotz/ikalbase.git
-cd Base-ZeroYT7
+cd ikalbase
 npm install
 npm start
 ```
