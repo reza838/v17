@@ -63,7 +63,7 @@ const _welcome = JSON.parse(fs.readFileSync('./cmd/tempatdata/welcome.json'))
 const _antilink = JSON.parse(fs.readFileSync('./cmd/tempatdata/antilink.json'))
 const _antivirtex = JSON.parse(fs.readFileSync('./cmd/tempatdata/antivirtex.json'))
 const setting = JSON.parse(fs.readFileSync('./cmd/setting/setting.json'))
-const ApikeyNya = JSON.parse(fs.readFileSync('./cmd/setting/ApikeyNya.json'))
+const ApikeyNya = JSON.parse(fs.readFileSync('./cmd/setting/Apikeynya.json'))
 const mess = JSON.parse(fs.readFileSync('./cmd/setting/mess.json'))
 
 
