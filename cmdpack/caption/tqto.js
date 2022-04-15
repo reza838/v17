@@ -12,4 +12,4 @@ const tqto = `
 • _ZER YT7_
 • _HAIKAL_
 • _ALL CREATOR BOT_`
-eksports.tqto = tqto
+exports.tqto = tqto
