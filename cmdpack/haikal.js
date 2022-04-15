@@ -69,7 +69,7 @@ var mess = JSON.parse(fs.readFileSync('./cmdpack/setting/mess.json'))
 
 //----------------------- Bagian Simple capt ------------------------------\\
 
-const { capt } = require('./cmdpack/caption/C1.js')
+const { capt1 } = require('./cmdpack/caption/C1.js')
 const { menu } = require('./cmdpack/caption/menu.js')
 const { tqto } = require('./cmdpack/caption/tqto.js')
 
