@@ -24,4 +24,4 @@ return`          *MENU*
 • _${prefix}listsurah_
 `
 }
-eksports.menu = menu
+exports.menu = menu
