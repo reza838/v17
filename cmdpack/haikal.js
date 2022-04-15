@@ -304,7 +304,7 @@ Info Bot :
 👻 Nama Bot : ${botname}
 🌀 Nama Owner : ${ownername}
 💠 Libray : () Baileys @3.5.3
-📱 Nomer Owner : ${owmernum}
+📱 Nomer Owner : ${ownernum}
 
 *Indonesian Time Zone*
 🌏 Wib : ${wib}
