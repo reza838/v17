@@ -67,12 +67,6 @@ var ApikeyNya = JSON.parse(fs.readFileSync('./cmdpack/setting/Apikeynya.json'))
 var mess = JSON.parse(fs.readFileSync('./cmdpack/setting/mess.json'))
 
 
-//----------------------- Bagian Simple capt ------------------------------\\
-
-const { capt1 } = require('./cmdpack/caption/C1.js')
-const { menu } = require('./cmdpack/caption/menu.js')
-const { tqto } = require('./cmdpack/caption/tqto.js')
-
 //-------- Bagian Setting Folder ------------------------\
 
 ownernum = setting.ownernum
@@ -289,7 +283,7 @@ var menunya = `
 
 Info Bot :
 🌐 Base : Haikal
-💌 Creator : ${capt}
+💌 Creator : Haikal
 👻 Nama Bot : ${botname}
 🌀 Nama Owner : ${ownername}
 💠 Libray : () Baileys @3.5.3
