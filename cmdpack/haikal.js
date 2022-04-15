@@ -308,7 +308,7 @@ ${date} ${week}
 
 //---------- Bagian Fake虏 ---------------------------\\
 
-faketeks = `©haikal - ${dateIslami}`
+faketeks = `©haikal - ${dateIslamic}`
 
 var fakelink = (teks) => {
 haikal.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
