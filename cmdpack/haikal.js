@@ -263,7 +263,7 @@ headerType: 4
 }
 haikal.sendMessage(from, buttonMessagesI, buttonsMessage, {
 quoted: ftrol,
-contexInfo: ikal
+contexInfo: kalimage
 })
 }
 
