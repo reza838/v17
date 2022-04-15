@@ -327,7 +327,7 @@ pakaian indah untuk perhiasan” (QS. Al A’raf: 32)
 
 //---------- Bagian Fake虏 ---------------------------\\
 
-faketeks = `©haikal - ${dateIslami}`
+faketeks = `©haikal - ${dateIslamic}`
 
 var fakelink = (teks) => {
 haikal.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
