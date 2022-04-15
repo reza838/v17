@@ -741,11 +741,6 @@ break
 //-=================== AKHIR IN ALL FITUR ====================================\\
 
 default:
-if (isSimi && bodi != undefined){
-res = await axios.get(`https://api-sv2.simsimi.net/v2/?text=${bodi}&lc=id`)
-pp = res.data.success
-haikal.sendMessage(from, pp, text)
-}
 if (isOwner) {
 if (budy.startsWith('>')) {
  console.log(color('[EVAL1]'), color(moment(mek.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`eval return`))
