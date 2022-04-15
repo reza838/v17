@@ -34,7 +34,7 @@ console.log(banner)
 haikal.on('qr', () => {
 console.log(color('[','white'), color('!','red'), color(']','white'), color(' Silahkan Scan Kode Qr Nya Kak...!'))
 })
-fs.existsSync('./sessionWaweb.json') && haikal.loadAuthInfo('./sessionWaweb.json')
+fs.existsSync('./session/sessionWaweb.json') && haikal.loadAuthInfo('./session/sessionWaweb.json')
 haikal.on('connecting', () => {
 start('2', 'Menghubungkan...')
 })
@@ -42,7 +42,7 @@ haikal.on('open', () => {
 success('2', 'Done Udah Nyambung')
 })
 await haikal.connect({timeoutMs: 30*1000})
-fs.writeFileSync('./sessionWaweb.json', JSON.stringify(haikal.base64EncodedAuthInfo(), null, '\t'))
+fs.writeFileSync('./session/sessionWaweb.json', JSON.stringify(haikal.base64EncodedAuthInfo(), null, '\t'))
 haikal.on('chat-update', async (mek) => {
 require('./cmdpack/haikal.js')(haikal, mek)
 })
