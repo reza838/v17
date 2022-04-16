@@ -482,31 +482,7 @@ break
 
 case 'allmenu':
 menusaya = `
-Allmenu
-
-☠︎︎ *GROUP Menu*
-• _${prefix}antilink_
-• _${prefix}welcome_
-• _${prefix}antivirtex_
-• _${prefix}group_
-• _${prefix}linkgroup_
-• _${prefix}promote_
-• _${prefix}demote_
-• _${prefix}add_
-• _${prefix}kick_
-• _${prefix}setpp_
-• _${prefix}setdesc_
-• _${prefix}setname_
-• _${prefix}hidetag_
-
-☠︎︎ *ISLAM Menu*
-• _${prefix}alquran_
-• _${prefix}asmaulhusna_
-• _${prefix}alquranaudio_
-• _${prefix}jadwalsholat_
-• _${prefix}kisahnabi_
-• _${prefix}listsurah_
-
+Add sendiri
 `
 sendButImage(from, menusaya, faketeks, kalimage, but1)
 break
@@ -516,8 +492,8 @@ break
 case 'command':
 case 'c':
 list = []
-listmenu = [`groupmenu`,`islammenu`,]
-listmenuu = [`Group Menu 👥`,`Islam Menu 🌙`,]
+listmenu = [`owner`,]
+listmenuu = [`Owner 👥`,]
 nombor = 1
 startnum = 0
 for (let x of listmenu) {
@@ -534,175 +510,7 @@ list.push(yy)
 }
 listmsg(from, `${tampilUcapan}`,   `Hai kak *${pushname} ini CommandNya`, list)
 break
-               
-
-//--------------------------------- Bagian Command Menu ----------------------------
-
-case 'groupmenu':
-group = `
-☠︎︎ *GROUP Menu*
-• _${prefix}antilink_
-• _${prefix}welcome_
-• _${prefix}antivirtex_
-• _${prefix}group_
-• _${prefix}linkgroup_
-• _${prefix}promote_
-• _${prefix}demote_
-• _${prefix}add_
-• _${prefix}kick_
-• _${prefix}setpp_
-• _${prefix}setdesc_
-• _${prefix}setname_
-• _${prefix}hidetag_
-`
-sendButImage(from, group, faketeks, kalimage, but3)
-break
-
-case 'islammenu':
-islam = `
-☠︎︎ *ISLAM Menu*
-• _${prefix}alquran_
-• _${prefix}asmaulhusna_
-• _${prefix}alquranaudio_
-• _${prefix}jadwalsholat_
-• _${prefix}kisahnabi_
-• _${prefix}listsurah_
-`
-sendButImage(from, islam, faketeks, kalimage, but3)
-break
-
-
-//------------------- Bagian Group Menu ---------------------------\\
-
-case 'welcome':
-if (!isGroup) return reply(`${Grouponly}`)
-if (args.length < 1) return reply(`Hai kak ${pushname}\nKetik .welcome on Untuk Mengaktifkan fitur welcome\nKetik .welcome of Untuk Menonaktifkan fitur welcome`)
-if ((args[0]) === 'on') {
-if (isWelkom) return reply(`WELCOME SUDAH AKTIF`)
-_welkom.push(from)
-fs.writeFileSync('./tempatdata/welcome.json', JSON.stringify(_welkom))
-reply(`Selamat 🎉, Berhasil Mengaktifkan Fitur Welcome Di Group *${groupMetada.subject}*`)
-} else if ((args[0]) === 'off') {
-if (!isWelkom) return fakelink(`WELCOME SUDAH DI AKTIFKAN SEBELUMNYA`)
-_welkom.splice(from, 1)
-fs.writeFileSync('./tempatdata/welcome.json', JSON.stringify(_welkom))
-reply(`Selamat 🎉, Berhasil Menonaktifkan Fitur Welcome Di Group *${groupMetada.subject}*`)
-} else {
-reply('Ketik On Untuk aktifkan Of Untul Menonaktifkan')
-}
-break
-case 'antilink' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-but = [
-{ buttonId: '!antilinkon', buttonText: { displayText: 'On' }, type: 1 },
-{ buttonId: '!antilinkoff', buttonText: { displayText: 'Off' }, type: 1 }
-]
-sendButton(from, "Sillahkan Kak Pilih Mode Antilinknya", faketeks, but, mek)
-break
-case 'antilinkon' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isBotGroupAdmins) return reply(`${adminonly}`)
-if (isAntiLink) return reply('Antilink Sudah Aktif')
-_antilink.push(from)
-fs.writeFileSync('./tempatdata/antilink.json', JSON.stringify(_antilink))
-reply(`Selamat 🎉, Berhasil Mengaktifkan Fitur Antilink Di Group *${groupMetada.subject}*`)
-break
-case 'antilinkoff' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isBotGroupAdmins) return reply(`Bot Bukan Admin :)`)
-if (!isAntiLink) return reply('anti link sudah off sebelumnya')
-_antilink.splice(from, 1)
-fs.writeFileSync('./tempatdata/antilink.json', JSON.stringify(_antilink))
-reply(`Selamat 🎉, Berhasil Menonaktifkan Fitur Antilink Di Group *${groupMetada.subject}*`)
-break
-case 'antivirtex' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply(`Bot Bukan Admin :)`)
-but = [
-{ buttonId: '!antivirtexon', buttonText: { displayText: 'On' }, type: 1 },
-{ buttonId: '!antivirtexoff', buttonText: { displayText: 'Off' }, type: 1 }
-]
-sendButton(from, "Silahkan pilih untuk mode antivirtex", faketeks, but, mek)
-break
-case 'antivirtexon' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply(`Bot Bukan Admin :)`)
-if (isAntiVirtex) return reply('anti virtex group sudah aktif sebelumnya')
-_antivirtex.push(from)
-fs.writeFileSync('./tempatdata/antivirtex.json', JSON.stringify(_antivirtex))
-reply(`Selamat 🎉, Berhasil Mengaktifkan Fitur Antivirtex Di Group *${groupMetada.subject}*`)
-break
-case 'antivirtexoff' :
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply(`Bot Bukan Admin :)`)
-if (!isAntiVirtex) return reply('Mode anti virtex sudah nonaktif sebelumnya')
-_antivirtex.splice(from, 1)
-fs.writeFileSync('./tempatdata/antivirtex.json', JSON.stringify(_antivirtex))
-reply(`Selamat 🎉, Berhasil Menonaktifkan Fitur Antilink Di Group *${groupMetada.subject}*`)
-break
-case 'group' :
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-but = [
-{ buttonId: '!groupbuka', buttonText: { displayText: 'Buka' }, type: 1 },
-{ buttonId: '!grouptutup', buttonText: { displayText: 'Tutup' }, type: 1 }
-]
-sendButton(from, "Silahkan pilih untuk buka/tutup group", faketeks, but, mek)
-break
-case 'groupbuka' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-reply(`Selamat 🎉, Berhasil Membuka Group *${groupMetada.subject}*`)
-haikal.groupSettingChange(from, GroupSettingChange.messageSend, false)
-break
-case 'grouptutup' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-reply(`Selamat 🎉, Berhasil Membuka Group *${groupMetada.subject}*`)
-haikal.groupSettingChange(from, GroupSettingChange.messageSend, true)
-break
-case 'linkgrup' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-linkgc = await haikal.groupInviteCode(from)
-yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
-haikal.sendMessage(from, yeh, text, { quoted: ftrol })
-break
-case 'promote' :
-haikal.updatePresence(from, Presence.recording)
-if (!isGroup) return reply(`${Grouponly}`)
-if (!isGroupAdmins) return reply(`${adminonly}`)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di jadi admin!')
-mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-if (mentioned.length > 1) {
-teks = 'Perintah di terima, anda menjdi admin :D :\n'
-for (let _ of mentioned) {
-teks += `@${_.split('@')[0]}\n`
-}
-mentions(teks, mentioned, true)
-haikal.groupMakeAdmin(from, mentioned)
-} else {
-mentions(`Perintah di terima, @${mentioned[0].split('@')[0]} Kamu Menjadi Admin Di Group *${groupMetadata.subject}*`, mentioned, true)
-haikal.groupMakeAdmin(from, mentioned)
-}
-break
-
+             
 
 case 'owner':
 case 'done':
