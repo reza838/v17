@@ -76,7 +76,7 @@ ownername = setting.ownername
 
 //--------- Bagian Export Modules --------------------------------\
 
-module.exports = haikal = async (haikal, mek, _welkom) => {
+module.exports = haikal = async (haikal, mek) => {
 try {
 if (!mek.hasNewMessage) return
 mek = mek.messages.all()[0]
