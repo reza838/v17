@@ -462,9 +462,10 @@ var isQuotedImage = type === 'extendedTextMessage' && content.includes('imageMes
 var isQuotedVideo = type === 'extendedTextMessage' && content.includes('videoMessage')
 var isQuotedAudio = type === 'extendedTextMessage' && content.includes('audioMessage')
 var isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
-if (!isGroup && isCmd) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, 
+//console from terminal
+if (!isGroup && isCmd) console.log('=>[ CMD [=>', '[PRIBADI[ COMMAND [FROM]', time, 
 color(command), 'from', color(sender.split('@')[0]), 'args :', color(args.length))
-if (isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;32mEXEC\x1b[1;37m]', time, 
+if (isCmd && isGroup) console.log('=>[CMD[=>', '[GROUP[COMMAND[FROM]', time, 
 color(command), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
 
 
@@ -510,38 +511,39 @@ listmsg(from, `${tampilUcapan}`,   `Hai kak *${pushname} ini CommandNya`, list)
 break
              
 
+case 'creator':
 case 'owner':
-case 'done':
-vcard3 = 'BEGIN:VCARD\n' +
-'VERSION:3.0\n' +
-'N:Sy;Bot;;;\n' +
-`FN:${ownername}\n` +
-`item1.TEL;waid=${owner}:${owner}\n` +
-`item1.X-ABLabel:⚡ Creator\n` +
-`item2.EMAIL;type=INTERNET:priadihaikal125@gmail.com\n` +
-`item2.X-ABLabel:📧 Email\n` +
-`item3.URL:https://youtube.com/c/MORISHIMA OFC/\n` +
-`item3.X-ABLabel:⛄️Channel Owner\n` +
-`item4.ADR:;;🇮🇩 Indonesia;;;;\n` +
-`item4.X-ABADR:ac\n` +
-`item4.X-ABLabel:🌏 Country\n` +
-`item5.X-ABLabel:🌀 Neko Botz Owner\n` +
- 'END:VCARD'.trim()
-haikal.sendMessage(from, {displayName: `© Haikal`, vcard: vcard3}, contact, 
-{ quoted: ftrol,
+haikal.updatePresence(from, Presence.recording)
+let inilist = []
+for (let i of ownerNumber) {
+let vname = haikal.contacts[i] != undefined ? haikal.contacts[i].vname || haikal.contacts[i].notify : undefined
+inilist.push({
+"displayName": 'HaikalGanz',
+"vcard": 'BEGIN:VCARD\n'
++ 'VERSION:3.0\n'
++ `FN:${ownername}\n`
++ `ORG: Creator ${ownername} ;\n`
++ `TEL;type=CELL;type=VOICE;waid=${ownernum}:${ownernum}\n`
++ 'END:VCARD'.trim()
 })
+}
+hehe = await haikal.sendMessage(from, {
+"displayName": `${inilist.length} kontak`,
+"contacts": inilist 
+}, 'contactsArrayMessage', { quoted: ftrol })
 button = [
 {buttonId: '.menu', buttonText: {displayText: 'MENU'}, type: 1},
-{buttonId: '.rulesbot', buttonText: {displayText: 'RULES'}, type: 1}
+{buttonId: '.allmenu', buttonText: {displayText: 'MENUALL'}, type: 1}
 ]
 buttons = {
-contentText: 'Nih Owner Ku Mau Tanya? Jangan Malu-Malu, Save Aja Kalo Boleh :)',
+contentText: 'Nih Owner Ku Mau Tanya Sesuatu?',
 footerText: faketeks,
 buttons: button,
 headerType: 1
 }
 await haikal.sendMessage(from, buttons, MessageType.buttonsMessage,)
 break
+
 
 
 //-=================== AKHIR IN ALL FITUR ====================================\\
