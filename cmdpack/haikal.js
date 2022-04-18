@@ -61,7 +61,7 @@ var { forks, wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, get
 //------------- Bagian Tempatdata --------------------------------------------------------------------\
 
 var user = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/user/user.json'))
-var _welcome = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/welcome.json'))
+var _welkom = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/welcome.json'))
 var _antilink = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/antilink.json'))
 var _antivirtex = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/antivirtex.json'))
 var setting = JSON.parse(fs.readFileSync('./cmdpack/setting/setting.json'))
