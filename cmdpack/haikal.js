@@ -65,7 +65,7 @@ var _welcome = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/welcome.json'))
 var _antilink = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/antilink.json'))
 var _antivirtex = JSON.parse(fs.readFileSync('./cmdpack/tempatdata/antivirtex.json'))
 var setting = JSON.parse(fs.readFileSync('./cmdpack/setting/setting.json'))
-var ApikeyNya = JSON.parse(fs.readFileSync('./cmdpack/setting/Apikeynya.json'))
+var ApikeyNya = JSON.parse(fs.readFileSync('./cmdpack/setting/ApikeyNya.json'))
 var mess = JSON.parse(fs.readFileSync('./cmdpack/setting/mess.json'))
 
 //-------- Bagian Setting Folder ------------------------\
@@ -76,7 +76,7 @@ ownername = setting.ownername
 
 //- apikey -
 
-humankey = Apikeynya.humankey
+humankey = ApikeyNya.humankey
 
 //--------- Bagian Export Modules --------------------------------\
 
