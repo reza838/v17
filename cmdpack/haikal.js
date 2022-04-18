@@ -564,7 +564,7 @@ menuku =`
 `
 sendButImage(from, menuku, `${menunya}`, kalimage, but2)
 sound = fs.readFileSync('cmdpack/Whatsapp/audiovn/anyavn.mp3')
-simple.sendMessage(from, sound, MessageType.audio, {quoted: ftrol, mimetype: 'audio/mp4', ptt:true})
+haikal.sendMessage(from, sound, MessageType.audio, {quoted: ftrol, mimetype: 'audio/mp4', ptt:true})
 break
 
 case 'allmenu':
