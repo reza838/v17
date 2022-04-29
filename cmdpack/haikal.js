@@ -1,35 +1,5 @@
 /* 
-Assalamualaikum
- 
-Info Sc :
-• Base ; haikal
-• Penyusun : haikal
 
-[©] Tq To =>
-• Allah swt
-• My Ortu
-• Adwajshing
-• Baileys
-• Whatsapp
-• Kahfz
-• Ridho
-• Dhani
-• Arifirazzaq
-• AldiFauzi
-• Mhakbarbar
-• Nurutomo
-• Dan All Creator Bot 
-• All Partner
-
-∆ Maaf Jika Banyak Error, Karena Saya Baru Belajar Buat Base
-Belum Jauh Jauh Ini.
-
-Folow My Sosialmedia :
- 
- • Github : https://github.com/Haikalbotz
- • Youtibe : https://youtube.com/channel/UCYDZpsK1w7hWYInmyZowrUA
- • Instagram : @haikal_aja
- • Tiktok : @bot
  
 #SupportCreatorBotWa
  
